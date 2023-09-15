@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+  </head>
+  <body>
+    <header><h2 style="text-align: center;">Admission Form</h2></header>
+    <main>
+      <!--student details-->
+      <form action="index.java">
+        <table width="50%" cellpadding="13px" style="margin-left: auto; margin-right: auto">
+          <tr>
+            <td colspan="2">
+              <strong>Student Details</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="name">Student Name:*</label> <br />
+              <input
+                type="text"
+                name="myname"
+                id="name"
+                placeholder="first name"
+                required
+              />
+            </td>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="myname"
+                id="name"
+                placeholder="last name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Date Of Birth:*</label><br />
+              <input type="date" name="mydob" id="dob" required/>
+            </td>
+            <td>
+              Student Gender: <br />
+              <input type="radio" name="myg" id="male" />Male<input
+                type="radio"
+                name="myg"
+                id="female"
+              />Female<input type="radio" name="myg" id="others" />Others
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Student Phone No. :</label><br />
+              <input type="tel" name="myphone" id="phone" />
+            </td>
+            <td>
+              <label for="email">Student Email:</label><br />
+              <input type="email" name="myemail" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nation">Nationality:</label><br />
+              <select name="myN" id="nation">
+                <option value="ind" selected>Indian</option>
+                <option value="aus">Australian</option>
+                <option value="brt">British</option>
+                <option value="sa">African</option>
+              </select>
+            </td>
+            <td>
+              <label for="age">Student Age:</label> <br />
+              <input type="number" name="myage" id="age" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="img">Upload Student Image</label><br />
+              <input type="file" name="" id="" />
+            </td>
+            <td>
+              <label for="sign">Upload Student signature</label><br />
+              <input type="file" name="sign" id="sign" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="bs">Any Birth Sign: </label><br />
+              <textarea name="bs" id="bs" cols="59" rows="3"></textarea>
+            </td>
+          </tr>
+          <!--family details-->
+          <tr>
+            <td colspan="2">
+              <strong>Family Details</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fname">Father Name:</label><br />
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="first name"
+              />
+            </td>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="fname"
+                placeholder="Last name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ph">Phone Number:</label><br />
+              <input type="tel" name="phone" id="ph" />
+            </td>
+            <td>
+              <label for="occ">Occupation:</label><br />
+              <input type="text" name="occ" id="occ" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mname">Mother Name:</label><br />
+              <input
+                type="text"
+                name="mname"
+                id="mname"
+                placeholder="first name"
+              />
+            </td>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="mname"
+                placeholder="Last name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mph">Phone Number:</label><br />
+              <input type="tel" name="phone" id="mph" />
+            </td>
+            <td>
+              <label for="mocc">Occupation:</label><br />
+              <input type="text" name="mocc" id="mocc" />
+            </td>
+          </tr>
+          <!--Address-->
+          <tr>
+            <td colspan="2"><strong>Student Address Details</strong></td>
+          </tr>
+          <!--current address-->
+          <tr>
+            <td colspan="2">
+              <strong>Current Address:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address;</label><br />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="House/building No,street "
+              />
+            </td>
+            <td>
+              <label for="Local">Locality/Town:</label><br />
+              <input type="text" name="Local" id="Local" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city">City:</label><br />
+              <input type="text" name="city" id="city" />
+            </td>
+            <td>
+              <label for="dist">District:</label><br />
+              <input type="text" name="dist" id="dist" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="state">state:</label><br />
+              <input type="text" name="state" id="state" />
+            </td>
+            <td>
+              <label for="pincode">Pincode:</label><br />
+              <input type="number" name="pincode" id="pincode" />
+            </td>
+          </tr>
+          <!--permanate Address-->
+          <tr>
+            <td colspan="2">
+              <strong>Permanate Address:</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="paddress">Address;</label><br />
+              <input
+                type="text"
+                name="paddress"
+                id="paddress"
+                placeholder="House/building No,street "
+              />
+            </td>
+            <td>
+              <label for="pLocal">Locality/Town:</label><br />
+              <input type="text" name="pLocal" id="pLocal" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pcity">City:</label><br />
+              <input type="text" name="pcity" id="pcity" />
+            </td>
+            <td>
+              <label for="pdist">District:</label><br />
+              <input type="text" name="pdist" id="pdist" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pstate">state:</label><br />
+              <input type="text" name="pstate" id="pstate" />
+            </td>
+            <td>
+              <label for="ppincode">Pincode:</label><br />
+              <input type="number" name="ppincode" id="ppincode" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="ok" id="ok" />I hereby declare that
+              all the details furnished here are true to the best of my
+              knowledge and belief.
+            </td>
+          </tr>
+          <tr>
+            <td >
+              <input type="submit" value="Submit" />
+            </td>
+            <td >
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>
